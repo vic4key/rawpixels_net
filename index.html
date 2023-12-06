@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html data-darkreader-mode="dynamic" data-darkreader-scheme="dark" data-lt-installed="true"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: #131516;
+   --darkreader-neutral-text: #d8d4cf;
+   --darkreader-selection-background: #004daa;
+   --darkreader-selection-text: #e8e6e3;
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">html {
+    background-color: #181a1b !important;
+}
+html {
+    color-scheme: dark !important;
+}
+html, body, input, textarea, select, button, dialog {
+    background-color: #181a1b;
+}
+html, body, input, textarea, select, button {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #404400 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #454a4d #202324;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}</style>
+<title>RAW Pixels</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="RGB,YUV,Pixel,formats,RAW,Image,framebuffer,RGB565">
+<link rel="stylesheet" type="text/css" href="RAW%20Pixels_files/rawstyle.css"><style class="darkreader darkreader--sync" media="screen"></style>
+<script id="facebook-jssdk" src="RAW%20Pixels_files/all.js"></script><script id="twitter-wjs" src="RAW%20Pixels_files/widgets.js"></script><script type="text/javascript" src="RAW%20Pixels_files/binaryReader.js"></script><meta name="darkreader" content="7f25c4cb6dc74f7681d22ecba0fd7bc6"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: #0f3a48 !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: #032029 !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: #0a0a0a !important;
+}
+.tou-uknfeu {
+    background-color: #231603 !important;
+}
+.tou-6i3zyv {
+    background-color: #19576c !important;
+}
+div.mermaid-viewer-control-panel .btn {
+  fill: var(--darkreader-neutral-text);
+  background-color: var(--darkreader-neutral-background);
+}
+svg g rect.er {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+  fill-opacity: 0.8 !important;
+  fill: var(--darkreader-selection-background);
+}
+svg rect.er.relationshipLabelBox {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect, svg g g.nodes polygon {
+  fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+  fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0, svg line.messageLine1 {
+  stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+  fill: var(--darkreader-neutral-background) !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style>
+</head><style id="stylish-1" class="stylish" type="text/css">/* Common */
+ pre, tt, code {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+/* MSDN */
+ .codeSnippetContainerCode pre {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+/* Syntax Highlighter */
+ .syntaxhighlighter pre, .syntaxhighlighter code, .syntaxhighlighter .line .syntaxhighlighter textarea {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+/* ACE Editor */
+ .ace_editor {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.ace-tm {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.ace_content {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.sheet.selected {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+/* Code Mirror */
+ .CodeMirror {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+pre.resultarea, code {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+/* Blob */
+ .blob-code {
+    font-family:"Courier New" !important;
+    font-size: 12px !important;
+}
+.blob-num {
+    font-family:"Courier New" !important;
+    font-size: 12px !important;
+}
+.readme .plain pre {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.markdown-body pre code, .markdown-body pre tt {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.markdown-body code, .markdown-body tt {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.markdown-body .highlight pre, .markdown-body pre {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.commits-list-item .commit-desc pre {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.commit .commit-title, .commit .commit-title a {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.commit-desc pre {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.f5 {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.file-info {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.blob-code-inner {
+    font-family: Courier !important;
+    font-size: 12px !important;
+}
+.text-mono {
+    font-family: Courier !important;
+    font-size: 12px !important;
+}
+.input-monospace {
+    font-family: Courier !important;
+    font-size: 12px !important;
+}
+.crayon-font-consolas * {
+    font-family: Courier !important;
+    font-size: 12px !important;
+}
+.crayon-syntax .crayon-num, .crayon-syntax .crayon-pre .crayon-line, .crayon-syntax .crayon-toolbar *, .crayon-syntax .crayon-pre * {
+    font-family: Courier !important;
+    font-size: 12px !important;
+}
+.blob-code-inner, .blob-code-inner > *, .CodeMirror pre > span, .CodeMirror-linenumber {
+    font-family: Courier !important;
+    font-size: 12px !important;
+}
+div.highlighter-rouge div.highlight, div.highlighter-rouge pre.highlight, div.highlighter-rouge code {
+    font-family: Courier !important;
+    font-size: 12px !important;
+}
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+div.fragment div.line {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+pre.prettyprint {
+    font-size: 12px !important;
+}
+.react-code-text {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.view-lines > .view-line {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.margin-view-overlays {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.cm-content {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+.cm-scroller {
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}</style><style class="darkreader darkreader--sync" media="screen"></style>
+<body data-new-gr-c-s-check-loaded="8.909.0" data-gr-ext-installed="">
+<div id="topBar">
+<div id="author">Robert Mazur robert.mazur(*)rawpixels.net</div>
+<div id="logo"></div><h1>RAW pixels viewer.</h1>
+This application allows you analyze raw image data, you can display 
+memory dumps of frame buffers, video buffers and uncompressed video 
+files. Play with image parameters below to explore world of colors.
+</div>
+
+<div id="zoomDiv" style="display: none; top: 517px; left: 854px;">
+<canvas id="zoom" width="200" height="200"></canvas>
+<div id="zoomInfo">x:294 y:468<br> r:216 g:108 b:80 a:255</div>
+</div>
+
+<div id="outputDiv">
+<canvas id="output" width="512" height="512"></canvas>
+</div>
+
+<form id="optionsForm">
+<script type="text/javascript">
+
+var Formats = new Array();
+var PixelFormats = new Array();
+var PixelPlanes = new Array();
+
+var offset = 0;
+var fliph = 0;
+var flipv = 0;
+var invertcol = 0;
+
+var xres = 512;
+var yres = 512;
+
+var rawData = [];
+var pixels = [];
+var zoom = 1;
+
+var readBytes = function(url) {
+	var xhr = new XMLHttpRequest;
+	console.log(url);
+	xhr.open("GET", url, false);
+	if (xhr.overrideMimeType) xhr.overrideMimeType('text/plain; charset=x-user-defined');
+	xhr.setRequestHeader("If-Modified-Since", "Fri, 01 Jan 1960 00:00:00 GMT");
+	xhr.send(null);
+	if (xhr.status !== 200 && xhr.status !== 0) throw "XMLHttpRequest failed, status code " + xhr.status;
+
+	var ret = [];
+	if (typeof VBArray !== "undefined") { // IE9
+		ret = new VBArray(xhr.responseBody).toArray();
+	} else {
+		var string = xhr.responseText;
+		var reader = new BinaryReader(string);
+		for (var i = 0; i < string.length; i++) ret.push(reader.readUInt8());
+	}
+
+	return ret;
+};
+
+
+function Format(name, toRgba, getPixels, bpsp1, bpsp2, bpsp3, bpsp4, align, subsh, subsv, le, ignoreAlpha, alphaFirst)
+{
+	this.name=name;
+	this.toRgba=toRgba;
+	this.bpsp1=bpsp1;
+	this.bpsp2=bpsp2;
+	this.bpsp3=bpsp3;
+	this.bpsp4=bpsp4;
+	this.align=align;
+	this.getPixels=getPixels;
+	this.subsh=subsh;
+	this.subsv=subsv;
+	this.le =le;
+	this.ignoreAlpha = ignoreAlpha;
+	this.alphaFirst = alphaFirst;
+}
+
+var format = new Format();
+
+function PixelPlane(name, getPixels)
+{
+	this.name=name;
+	this.getPixels=getPixels;
+}
+
+function PixelFormat(name, toRgba)
+{
+	this.name=name;
+	this.toRgba=toRgba;
+}
+
+function getBit(dataIn, pos, le) {
+	posByte = pos >> 3;
+	if(le)
+		posByte = posByte ^ 1;
+	posBit = 0x80 >> (pos%8);
+	return (dataIn[posByte] & posBit) != 0;
+}
+
+function getBits(dataIn, start, count, le) {
+	var ret = 0;
+	for(var i=0; i<count; i++) {
+		ret <<=1;
+		var bit = getBit(dataIn,start+i, le);
+		if(bit) ret |= 1;
+	}
+	return ret;
+}
+
+function Align(x, align) {
+	if(x % align)
+		x += align - (x % align);
+	return x;
+}
+
+function getPackedEx(dataIn, xres, yres, format, torgba) {
+	var ret = [];
+	var bpp = format.bpsp1 + format.bpsp2 + format.bpsp3 + format.bpsp4;
+	for(var i=0; i<(xres*yres*bpp); i+=bpp) {
+		var a = getBits(dataIn, i, format.bpsp1, format.le);
+		var b = getBits(dataIn, i + format.bpsp1, format.bpsp2, format.le);
+		var c = getBits(dataIn, i + format.bpsp1 + format.bpsp2, format.bpsp3, format.le);
+		var d = getBits(dataIn, i + format.bpsp1 + format.bpsp2 + format.bpsp3, format.bpsp4, format.le);
+		a = to8bit(a, format.bpsp1);
+		b = to8bit(b, format.bpsp2);
+		c = to8bit(c, format.bpsp3);
+		d = to8bit(d, format.bpsp4);
+
+		ret.push(torgba(a,b,c,d));
+	}
+	return ret;
+}
+
+function getPlanarEx(dataIn, xres, yres, format, torgba) {
+	var plane1 = 0;
+	var plane2 = xres*yres*format.bpsp1;
+	var plane3 = plane2+(xres*yres*format.bpsp2/format.subsv)/format.subsh;
+	var plane4 = plane3+(xres*yres*format.bpsp3/format.subsv)/format.subsh;
+	var ret = [];
+
+	var align =  format.align* 8; // alignment in bits
+
+	plane2 = Align(plane2, align);
+	plane3 = Align(plane3, align);
+
+	var hdiv=0;
+	var vdiv=0;
+	var oldplane2 = plane2;
+	var oldplane3 = plane3;
+	for (var y=0; y<yres; y++) {
+        	for (var x=0; x<xres; x++) {
+			var a = getBits(dataIn,plane1,format.bpsp1, format.le);
+			var b = getBits(dataIn,plane2,format.bpsp2, format.le);
+			var c = getBits(dataIn,plane3,format.bpsp3, format.le);
+			a = to8bit(a, format.bpsp1);
+			b = to8bit(b, format.bpsp2);
+			c = to8bit(c, format.bpsp3);
+			plane1 += format.bpsp1;
+			hdiv++;
+			if(hdiv==format.subsh) {
+				plane2+= format.bpsp2;
+				plane3+= format.bpsp3;
+				hdiv = 0;
+			}
+			ret.push(torgba(a,b,c,0xff));
+         	}
+		vdiv++;
+		if(vdiv==format.subsv) {
+			vdiv=0;
+			plane2 = oldplane2 + Align((xres/format.subsh)*format.bpsp2, align);
+			plane3 = oldplane3 + Align((xres/format.subsh)*format.bpsp3, align);
+			oldplane2 = plane2;
+			oldplane3 = plane3;
+		} else {
+			plane2 = oldplane2;
+			plane3 = oldplane3;
+		}
+
+          }
+	return ret;
+}
+
+function getSemiPlanarEx(dataIn, xres, yres, format, torgba) {
+	var plane1 = 0;
+	var plane2 = xres*yres*format.bpsp1;
+	var ret = [];
+
+	var align = format.align*8; // alignment in bits
+
+	plane2 = Align(plane2, align);
+
+	var hdiv=0;
+	var vdiv=0;
+	var oldplane2 = plane2;
+	for (var y=0; y<yres; y++) {
+        	for (var x=0; x<xres; x++) {
+			var a = getBits(dataIn,plane1,format.bpsp1, format.le);
+			var b = getBits(dataIn,plane2,format.bpsp2, format.le);
+			var c = getBits(dataIn,plane2+format.bpsp2,format.bpsp3, format.le);
+			a = to8bit(a, format.bpsp1);
+			b = to8bit(b, format.bpsp2);
+			c = to8bit(c, format.bpsp3);
+			plane1 += format.bpsp1;
+			hdiv++;
+			if(hdiv==format.subsh) {
+				plane2+= format.bpsp2+format.bpsp3;
+				hdiv = 0;
+			}
+			ret.push(torgba(a,b,c,0xff));
+         	}
+		vdiv++;
+		if(vdiv==format.subsv) {
+			vdiv=0;
+			plane2 = oldplane2 + Align(xres/format.subsh*(format.bpsp2+format.bpsp3), align);
+			oldplane2 = plane2;
+		} else
+			plane2 = oldplane2;
+
+          }
+
+
+	return ret;
+}
+
+function getPackedYUV(dataIn, xres, yres, format, torgba) {
+	var ret = [];
+	var bpp = format.bpsp1 + format.bpsp2 + format.bpsp3 + format.bpsp4;
+	for(var i=0; i<(xres*yres*bpp/2); i+=bpp) {
+		var a = getBits(dataIn, i, format.bpsp1, format.le);
+		var b = getBits(dataIn, i + format.bpsp1, format.bpsp2, format.le);
+		var c = getBits(dataIn, i + format.bpsp1 + format.bpsp2, format.bpsp3, format.le);
+		var d = getBits(dataIn, i + format.bpsp1 + format.bpsp2 + format.bpsp3, format.bpsp4, format.le);
+		a = to8bit(a, format.bpsp1);
+		b = to8bit(b, format.bpsp2);
+		c = to8bit(c, format.bpsp3);
+		d = to8bit(d, format.bpsp4);
+		ret.push(torgba(a,b,d,0xff));
+		ret.push(torgba(c,b,d,0xff));
+	}
+	return ret;
+}
+
+function getBayerRGB(dataIn, xres, yres, format, torgba) {
+	var ret = [];
+	var bpp = format.bpsp1 + format.bpsp2 + format.bpsp3 + format.bpsp4;
+	for(var i=0; i<(xres*yres*bpp/2); i+=bpp) {
+		var a = getBits(dataIn, i, format.bpsp1, format.le);
+		var b = getBits(dataIn, i + format.bpsp1, format.bpsp2, format.le);
+		var c = getBits(dataIn, i + format.bpsp1 + format.bpsp2, format.bpsp3, format.le);
+		var d = getBits(dataIn, i + format.bpsp1 + format.bpsp2 + format.bpsp3, format.bpsp4, format.le);
+		a = to8bit(a, format.bpsp1);
+		b = to8bit(b, format.bpsp2);
+		c = to8bit(c, format.bpsp3);
+		d = to8bit(d, format.bpsp4);
+		ret.push(torgba(a,b,d,0xff));
+		ret.push(torgba(c,b,d,0xff));
+	}
+	return ret;
+}
+
+function to8bit(x, bpp) {
+	if(!bpp) return -1;
+	if(bpp > 8)
+		x = x >> (bpp - 8); // FIXME dithering
+	if(bpp < 8) {
+		x = x << (8 - bpp); // FIXME calculate scale
+		x |= (x & 0xff) >> bpp;
+	}
+	return x;
+}
+
+// RGB
+function rgba2rgba(r, g, b, a) {
+	if(format.alphaFirst) {
+		var tmp = a;
+		a = r;
+		r = g;
+		g = b;
+		b = tmp;
+
+	}
+	if(format.ignoreAlpha)
+		a = 0xff;
+	if(r<0) r = 0;
+	if(g<0) g = 0;
+	if(b<0) b = 0;
+	return (a << 24 | r | g << 8 | b << 16);
+}
+// BGR
+function bgra2rgba(b, g, r, a) {
+	return rgba2rgba(r, g, b, a);
+}
+// GRB
+function grba2rgba(g, r, b, a) {
+	return rgba2rgba(r, g, b, a);
+}
+// GBR
+function gbra2rgba(g, b, r, a) {
+	return rgba2rgba(r, g, b, a);
+}
+// RBG
+function rbga2rgba(r, b, g, a) {
+	return rgba2rgba(r, g, b, a);
+}
+// BRG
+function brga2rgba(b, r, g, a) {
+	return rgba2rgba(r, g, b, a);
+}
+
+// grayscale
+function gray2rgba(y, foo1, foo2, a) {
+	var r = y, g = y , b = y;
+	if(format.alphaFirst) {
+		g = a;
+		b = a;
+	}
+	return rgba2rgba(r, g, b, a);
+}
+
+function yuv2rgba (YY, UU, VV, a) {
+        var R = YY + 1.402   *(VV-128);
+        var G = YY - 0.34414 *(UU-128) - 0.71414*(VV-128);
+        var B = YY + 1.772   *(UU-128);
+
+        if (B<0) B=0; else if (B>255) B=255;
+        if (G<0) G=0; else if (G>255) G=255;
+        if (R<0) R=0; else if (R>255) R=255;
+
+	if(format.alphaFirst) {
+		var tmp = a;
+		a = R;
+		Rr = G;
+		G = B;
+		B = tmp;
+
+	}
+	if(format.ignoreAlpha)
+		a = 0xff;
+
+        return (a << 24 | R | G << 8 | B << 16);
+};
+
+function yvu2rgba (YY, VV, UU, a) {
+        return yuv2rgba (YY, UU, VV, a);
+};
+
+//function Format(name, toRgba, getPixels, bpsp1, bpsp2, bpsp3, bpsp4, align, subsh, subsv, le, ignoreAlpha, alphaFirst)
+Formats.push(new Format("BGR8",  "BGRA", "Packed", 2,3,3,0,1,1,1,false,false,false));
+Formats.push(new Format("RGB32",  "RGBA", "Packed", 8,8,8,8,1,1,1,false,true,false));
+Formats.push(new Format("RGB24",  "RGBA", "Packed", 8,8,8,0,1,1,1,false,true,false));
+Formats.push(new Format("RGB565", "RGBA", "Packed", 5,6,5,0,1,1,1,true,true,false));
+Formats.push(new Format("YUV 420 SP (NV12)", "YVU", "SemiPlanar", 8,8,8,0,1,2,2,false,true,false));
+Formats.push(new Format("YUV 420 SP (NV21)", "YUV", "SemiPlanar", 8,8,8,0,1,2,2,false,true,false));
+Formats.push(new Format("Grayscale 8bit", "Grayscale", "Packed", 8,0,0,0,1,1,1,false,true,false));
+Formats.push(new Format("YV12", "YVU", "Planar", 8,8,8,0,1,2,2,false,true,false));
+Formats.push(new Format("YV16", "YVU", "Planar", 8,8,8,0,1,2,1,false,true,false));
+Formats.push(new Format("IYUV", "YUV", "Planar", 8,8,8,0,1,2,2,false,true,false));
+Formats.push(new Format("RGB555",  "RGBA", "Packed", 1,5,5,5,1,1,1,true,true,true));
+Formats.push(new Format("RGB4_byte",  "GRBA", "Packed", 4,1,2,1,1,1,1,false,true,true));
+Formats.push(new Format("RGB8",  "RGBA", "Packed", 3,3,2,0,1,1,1,false,false,false));
+Formats.push(new Format("YUV444p",  "YVU", "Planar", 8,8,8,0,1,1,1,false,false,true));
+Formats.push(new Format("YUV440p",  "YVU", "Planar", 8,8,8,0,1,1,2,false,false,true));
+Formats.push(new Format("YUV422p",  "YVU", "Planar", 8,8,8,0,1,2,1,false,false,true));
+Formats.push(new Format("YUV420p",  "YVU", "Planar", 8,8,8,0,1,2,2,false,false,true));
+Formats.push(new Format("YUV411p",  "YVU", "Planar", 8,8,8,0,1,4,1,false,false,true));
+Formats.push(new Format("YUV410p",  "YVU", "Planar", 8,8,8,0,1,4,4,false,false,true));
+Formats.push(new Format("Y444",  "YVU", "Packed", 4,4,4,4, 1,1,1,true,true,true));
+Formats.push(new Format("YUV555",  "YVU", "Packed", 5,5,5,1, 1,1,1,true,true,true));
+Formats.push(new Format("YUV565",  "YVU", "Packed", 5,6,5,0, 1,1,1,true,true,true));
+Formats.push(new Format("UYVY",  "YVU", "PackedYUV", 8,8,8,8, 1,1,1,true,true,true));
+Formats.push(new Format("YUY2",  "YVU", "PackedYUV", 8,8,8,8, 1,1,1,false,true,true));
+
+PixelPlanes.push(new PixelPlane("Packed", getPackedEx));
+PixelPlanes.push(new PixelPlane("SemiPlanar", getSemiPlanarEx));
+PixelPlanes.push(new PixelPlane("Planar", getPlanarEx));
+PixelPlanes.push(new PixelPlane("PackedYUV", getPackedYUV));
+
+PixelFormats.push(new PixelFormat("RGBA", rgba2rgba));
+PixelFormats.push(new PixelFormat("BGRA", bgra2rgba));
+PixelFormats.push(new PixelFormat("GBRA", gbra2rgba));
+PixelFormats.push(new PixelFormat("GRBA", grba2rgba));
+PixelFormats.push(new PixelFormat("RBGA", rbga2rgba));
+PixelFormats.push(new PixelFormat("BRGA", brga2rgba));
+PixelFormats.push(new PixelFormat("YUV",  yuv2rgba));
+PixelFormats.push(new PixelFormat("YVU",  yvu2rgba));
+PixelFormats.push(new PixelFormat("Grayscale",  gray2rgba));
+
+function getPixels(dataIn, xres, yres, format) {
+	return format.getPixels(dataIn, xres, yres, format, format.toRgba);
+}
+
+function setup(filename) {
+	rawData = readBytes(filename);
+	setResolution();
+}
+
+
+function distXY(x1,y1,x2,y2)
+{
+ return Math.sqrt((x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2));
+}
+
+var zoomSize=200;
+
+function doDrawZoom(ofsx,ofsy,sx,sy) {
+		var img = document.getElementById("zoom");
+		document.getElementById("zoomDiv").style.top = (sy-(zoomSize>>1))+"px";
+		document.getElementById("zoomDiv").style.left = (sx-(zoomSize>>1))+"px";
+		ofsx /= zoom;
+		ofsy /= zoom;
+		ofsx &=0xffffffff;
+		ofsy &=0xffffffff;
+		var inpos = ofsy*xres+ofsx;
+		document.getElementById("zoomInfo").innerHTML =
+		"x:" + ofsx +
+		" y:" + ofsy + "<br>" +
+		" r:" + ((pixels[inpos]) & 0xff) +
+		" g:" + ((pixels[inpos] >> 8) & 0xff) +
+		" b:" + ((pixels[inpos] >> 16) & 0xff) +
+		" a:" + ((pixels[inpos] >> 24) & 0xff);
+		var c = img.getContext("2d");
+
+		var imageData = c.createImageData(zoomSize, zoomSize);
+
+		ofsx-=zoomSize >> 3;
+		ofsy-=zoomSize >> 3;
+
+		for(var y=0; y<zoomSize; y++)
+			for(var x=0; x<zoomSize; x++) {
+			var inpos = (ofsy+(y>>2))*xres+ofsx+(x>>2);
+			var outpos = (y*zoomSize+x)*4;
+			var dist = distXY(y,x,zoomSize/2,zoomSize/2);
+			if(ofsy+(y>>2)<0 || ofsy+(y>>2)>=yres || ofsx+(x>>2)<0 || ofsx+(x>>2)>=xres || zoom > 3) {
+				imageData.data[outpos+3] = 0;
+			} else if (dist > zoomSize/4) {
+				dist = dist/(zoomSize/3);
+				imageData.data[outpos+3] = 2*255*Math.cos(dist);
+				imageData.data[outpos+2] = (pixels[inpos] >> 16) & 0xff;
+				imageData.data[outpos+1] = (pixels[inpos] >> 8) & 0xff;
+				imageData.data[outpos+0] = (pixels[inpos]) & 0xff;
+			} else {
+				imageData.data[outpos+3] = 0xff;//(pixels[inpos] >> 24) & 0xff;
+				imageData.data[outpos+2] = (pixels[inpos] >> 16) & 0xff;
+				imageData.data[outpos+1] = (pixels[inpos] >> 8) & 0xff;
+				imageData.data[outpos+0] = (pixels[inpos]) & 0xff;
+			}
+		}
+		c.putImageData(imageData, 0, 0);
+}
+
+var drawNeeded = true;
+
+function doDraw() {
+	if(drawNeeded) {
+		drawNeeded = false;
+		var img = document.getElementById("output");
+		var c = img.getContext("2d");
+
+		var imageData = c.createImageData(xres*zoom, yres*zoom);
+
+		pixels = getPixels(rawData.slice(offset),xres,yres,format);
+
+		if(fliph) {
+			for(var y=0; y<yres; y++) {
+				var start = y*xres+0;
+				var stop = (y+1)*xres-1;
+				while(start < stop) {
+					var tmp = pixels[start];
+					pixels[start] = pixels[stop];
+					pixels[stop] = tmp;
+					stop--;
+					start++;
+				}
+			}
+		}
+		if(flipv) {
+			for(var x=0; x<xres; x++) {
+				var start = x;
+				var stop = xres*yres+x-xres;
+				while(start < stop) {
+					var tmp = pixels[start];
+					pixels[start] = pixels[stop];
+					pixels[stop] = tmp;
+					stop -= xres;
+					start += xres;
+				}
+			}
+		}
+		if(invertcol) {
+			var p = xres * yres;
+			while (p--) {
+				pixels[p] = ~pixels[p] | 0xff000000;
+			}
+		}
+
+		if(zoom < 2) {
+			var p = xres * yres;
+			var pix = p*4, pix1 = pix + 1, pix2 = pix + 2, pix3 = pix + 3;
+
+			while (p--) {
+				imageData.data[pix3-=4] = (pixels[p] >> 24) & 0xff;
+				imageData.data[pix2-=4] = (pixels[p] >> 16) & 0xff;
+				imageData.data[pix1-=4] = (pixels[p] >> 8) & 0xff;
+				imageData.data[pix -=4] = (pixels[p]) & 0xff;
+			}
+		} else {
+			for(var x=0; x<xres; x++)
+				for(var y=0; y<yres; y++) {
+					var pixel = pixels[x+xres*y];
+					for(var k=0; k<zoom; k++)
+						for(var j=0; j<zoom; j++) {
+							var pos = (((x*zoom)+j)+((y*zoom)+k)*xres*zoom)*4;
+							imageData.data[pos+3] = (pixel >> 24) & 0xff;
+							imageData.data[pos+2] = (pixel >> 16) & 0xff;
+							imageData.data[pos+1] = (pixel >> 8) & 0xff;
+							imageData.data[pos+0] = (pixel) & 0xff;
+						}
+				}
+		}
+		c.putImageData(imageData, 0, 0);
+	}
+	setTimeout("doDraw()",200);
+}
+
+function printFormat() {
+	document.getElementById("txtout").value =
+'Formats.push(new Format("",  "'+
+document.getElementById("pixelFormatSelect").value+'", "'+
+document.getElementById("pixelPlaneSelect").value+'", '+
+document.getElementById("format.bpsp1Input").value+','+
+document.getElementById("format.bpsp2Input").value+','+
+document.getElementById("format.bpsp3Input").value+','+
+document.getElementById("format.bpsp4Input").value+','+
+document.getElementById("format.alignInput").value+','+
+document.getElementById("format.subshInput").value+','+
+document.getElementById("format.subsvInput").value+','+
+document.getElementById("format.leInput").checked+','+
+document.getElementById("format.alphaFirstInput").checked+','+
+document.getElementById("format.ignoreAlphaInput").checked+'));'
+}
+
+function draw() {
+	drawNeeded = true;
+	printFormat();
+}
+
+function getArrayIndex(array, name) {
+  var len = array.length;
+
+    for (var from = 0; from < len; from++)
+    {
+      if (array[from].name == name)
+        return from;
+    }
+    return -1;
+}
+
+function setFormat(x)
+{
+	document.getElementById("pixelFormatSelect").selectedIndex = getArrayIndex(PixelFormats, Formats[x].toRgba);
+	document.getElementById("pixelFormatSelect").onchange();
+	document.getElementById("pixelPlaneSelect").selectedIndex = getArrayIndex(PixelPlanes, Formats[x].getPixels);
+	document.getElementById("pixelPlaneSelect").onchange();
+	document.getElementById("format.bpsp1Input").value = Formats[x].bpsp1;
+	document.getElementById("format.bpsp1Input").onchange();
+	document.getElementById("format.bpsp2Input").value = Formats[x].bpsp2;
+	document.getElementById("format.bpsp2Input").onchange();
+	document.getElementById("format.bpsp3Input").value = Formats[x].bpsp3;
+	document.getElementById("format.bpsp3Input").onchange();
+	document.getElementById("format.bpsp4Input").value = Formats[x].bpsp4;
+	document.getElementById("format.bpsp4Input").onchange();
+	document.getElementById("format.alignInput").value = Formats[x].align;
+	document.getElementById("format.alignInput").onchange();
+	document.getElementById("format.subshInput").value = Formats[x].subsh;
+	document.getElementById("format.subshInput").onchange();
+	document.getElementById("format.subsvInput").value = Formats[x].subsv;
+	document.getElementById("format.subsvInput").onchange();
+	document.getElementById("format.leInput").checked = Formats[x].le;
+	document.getElementById("format.leInput").onchange();
+	document.getElementById("format.alphaFirstInput").checked = Formats[x].alphaFirst;
+	document.getElementById("format.alphaFirstInput").onchange();
+	document.getElementById("format.ignoreAlphaInput").checked = Formats[x].ignoreAlpha;
+	document.getElementById("format.ignoreAlphaInput").onchange();
+	draw();
+}
+
+function formatChange()
+{
+	var x=document.getElementById("formatSelect").selectedIndex;
+	var y=document.getElementById("formatSelect").options;
+	setFormat(x);
+}
+
+function pixelFormatChange()
+{
+	var x=document.getElementById("pixelFormatSelect").selectedIndex;
+	var y=document.getElementById("pixelFormatSelect").options;
+	format.toRgba = PixelFormats[x].toRgba;
+	draw();
+}
+
+function pixelPlaneChange()
+{
+	var x=document.getElementById("pixelPlaneSelect").selectedIndex;
+	var y=document.getElementById("pixelPlaneSelect").options;
+	format.getPixels = PixelPlanes[x].getPixels;
+	draw();
+}
+
+
+function loadFile()
+{
+	var select = document.getElementById("fileName");
+	if ('files' in select)
+		var file = select.files[0];
+	else
+		var file = select.value;
+
+	if(!file) return;
+
+	if (typeof FileReader === "undefined") {
+		alert("Your browser do not support HTML5 FileReader class. Plese use Firefox or Chrome.");
+		return;
+	}
+
+	var reader = new FileReader();
+
+	if (reader.readAsArrayBuffer != null)
+	{
+		reader.readAsArrayBuffer(file);
+	}
+	else
+	{
+		reader.readAsBinaryString(file);
+	}
+	reader.onload = function (evt) {
+		var ret = [];
+		var size = evt.target.result.length;
+		if (reader.readAsArrayBuffer != null)
+		{
+			var byteArray = new Uint8Array(evt.target.result);
+			for (var i = 0; i < byteArray.byteLength; i++) ret.push(byteArray[i]);
+		}
+		else
+		{
+			var breader = new BinaryReader(evt.target.result);
+			for (var i = 0; i < size; i++) ret.push(breader.readUInt8());
+		}
+ 		rawData = ret;
+		setResolution();
+    }
+    reader.onerror = function (evt) {
+        alert(evt);
+    }
+
+}
+
+function isInt(x) {
+	var y=parseInt(x);
+	if (isNaN(y)) return false;
+	return x==y && x.toString()==y.toString();
+}
+
+function setResolution()
+{
+
+	var c = document.getElementById("output");
+	var z=document.getElementById("zoomValue").value;
+	if(isInt(z) && z<8)
+		zoom = parseInt(z);
+
+	var y=document.getElementById("imageHeight").value;
+	if(isInt(y)) {
+		yres = parseInt(y);
+		c.height = yres * zoom;
+	}
+	var x=document.getElementById("imageWidth").value;
+	if(isInt(x)) {
+		xres = parseInt(x);
+		c.width = xres*zoom;
+	}
+	var o=document.getElementById("imageOffset").value;
+	if(isInt(o))
+		offset = parseInt(o);
+	draw();
+}
+
+function array2select(name, id, array) {
+	document.write(name+':<select id="'+id+'Select" onchange="'+id+'Change()">');
+	for (f in array)
+		document.write('<option value="'+array[f].name+'">'+array[f].name+'</option>');
+	document.write("</select>");
+}
+function var2input(name, id, variable) {
+	document.write(name+':<input id="'+id+'Input" type="text" class="varInput" onchange="{'+id+'=parseInt(document.getElementById(\''+id+'Input\').value);draw();}" value="'+variable+'"></input>');
+}
+function bool2input(name, id, variable) {
+	document.write(name+':<input id="'+id+'Input" type="checkbox" onchange="{'+id+'=document.getElementById(\''+id+'Input\').checked;draw();}" value=0!="'+variable+'"></input>');
+//	document.write(name+':<input id="'+id+'Input" type="checkbox" onchange="{'+id+'=document.getElementById(\''+id+'Input\').checked;alert('+id+');draw();}" value=0!="'+variable+'"></input>');
+}
+
+function saveFile(filename, base64)
+{
+	window.location = 'data:application/octet-stream;filename=image.raw;base64,'+base64;
+}
+
+mousemove = function (event) { // this  object refers to canvas object
+    var totalOffsetX = 0;
+    var totalOffsetY = 0;
+    var X = 0;
+    var Y = 0;
+    var currentElement = this;
+
+    do{
+        totalOffsetX += currentElement.offsetLeft;
+        totalOffsetY += currentElement.offsetTop;
+    }
+    while(currentElement = currentElement.offsetParent)
+
+    X = event.pageX - totalOffsetX;
+    Y = event.pageY - totalOffsetY;
+
+//    document.getElementById("txtout").value ="x="+xres+"y="+yres;
+document.getElementById("zoomDiv").style.display="inline";
+    doDrawZoom(X,Y,event.pageX,event.pageY);
+}
+
+mouseout = function (event) { // this  object refers to canvas object
+    		document.getElementById("zoomDiv").style.display="none";
+}
+
+document.getElementById("output").addEventListener('mousemove', mousemove, false);
+document.getElementById("output").addEventListener('mouseout', mouseout, false);
+
+if (!document.createElement('canvas').getContext) {
+document.write('<div id="error">Your browser don\'t support HTML5 canvas element. The application will not work. If you wish to use<div>');
+}
+</script>
+<h2>Image parameters</h2>
+<div id="fileDiv">
+<div id="fileSelect">
+Select RAW data:
+<input id="fileName" type="file" onchange="loadFile()">
+</div>
+width:<input id="imageWidth" type="text" onchange="setResolution()" value="512">
+height:<input id="imageHeight" type="text" onchange="setResolution()" value="512">
+offset:<input id="imageOffset" type="text" onchange="setResolution()" value="0">
+flip h:<input id="flipH" type="checkbox" onchange="{fliph=document.getElementById('flipH').checked;draw();}" value="0">
+flip v:<input id="flipV" type="checkbox" onchange="{flipv=document.getElementById('flipV').checked;draw();}" value="0">
+invert:<input id="invertCol" type="checkbox" onchange="{invertcol=document.getElementById('invertCol').checked;draw();}" value="0">
+zoom:  <input id="zoomValue" type="text" onchange="setResolution()" value="1">
+</div>
+<script type="text/javascript">
+
+
+function init() {
+	setup("test/lenna/bgr8.yuv");
+	setFormat(0);
+	doDraw();
+}
+init();
+//saveFile("test.txt","dGVzdA==");
+</script><div id="formatDiv">Predefined format:<select id="formatSelect" onchange="formatChange()"><option value="BGR8" selected="selected">BGR8</option><option value="RGB32">RGB32</option><option value="RGB24">RGB24</option><option value="RGB565">RGB565</option><option value="YUV 420 SP (NV12)">YUV 420 SP (NV12)</option><option value="YUV 420 SP (NV21)">YUV 420 SP (NV21)</option><option value="Grayscale 8bit">Grayscale 8bit</option><option value="YV12">YV12</option><option value="YV16">YV16</option><option value="IYUV">IYUV</option><option value="RGB555">RGB555</option><option value="RGB4_byte">RGB4_byte</option><option value="RGB8">RGB8</option><option value="YUV444p">YUV444p</option><option value="YUV440p">YUV440p</option><option value="YUV422p">YUV422p</option><option value="YUV420p">YUV420p</option><option value="YUV411p">YUV411p</option><option value="YUV410p">YUV410p</option><option value="Y444">Y444</option><option value="YUV555">YUV555</option><option value="YUV565">YUV565</option><option value="UYVY">UYVY</option><option value="YUY2">YUY2</option></select></div><div id="pixelDiv">Pixel Format:<select id="pixelFormatSelect" onchange="pixelFormatChange()"><option value="RGBA">RGBA</option><option value="BGRA" selected="selected">BGRA</option><option value="GBRA">GBRA</option><option value="GRBA">GRBA</option><option value="RBGA">RBGA</option><option value="BRGA">BRGA</option><option value="YUV">YUV</option><option value="YVU">YVU</option><option value="Grayscale">Grayscale</option></select>Ignore Alpha:<input id="format.ignoreAlphaInput" type="checkbox" onchange="{format.ignoreAlpha=document.getElementById('format.ignoreAlphaInput').checked;draw();}" value="0!=&quot;undefined&quot;">Alpha First:<input id="format.alphaFirstInput" type="checkbox" onchange="{format.alphaFirst=document.getElementById('format.alphaFirstInput').checked;draw();}" value="0!=&quot;undefined&quot;"></div><div id="pixelBppDiv">bpp1:<input id="format.bpsp1Input" type="text" class="varInput" onchange="{format.bpsp1=parseInt(document.getElementById('format.bpsp1Input').value);draw();}" value="2">bpp2:<input id="format.bpsp2Input" type="text" class="varInput" onchange="{format.bpsp2=parseInt(document.getElementById('format.bpsp2Input').value);draw();}" value="3">bpp3:<input id="format.bpsp3Input" type="text" class="varInput" onchange="{format.bpsp3=parseInt(document.getElementById('format.bpsp3Input').value);draw();}" value="3">bpp4:<input id="format.bpsp4Input" type="text" class="varInput" onchange="{format.bpsp4=parseInt(document.getElementById('format.bpsp4Input').value);draw();}" value="0">Litle Endian:<input id="format.leInput" type="checkbox" onchange="{format.le=document.getElementById('format.leInput').checked;draw();}" value="0!=&quot;undefined&quot;"></div><div id="pixelPlaneDiv">Pixel Plane:<select id="pixelPlaneSelect" onchange="pixelPlaneChange()"><option value="Packed" selected="selected">Packed</option><option value="SemiPlanar">SemiPlanar</option><option value="Planar">Planar</option><option value="PackedYUV">PackedYUV</option></select>alignment:<input id="format.alignInput" type="text" class="varInput" onchange="{format.align=parseInt(document.getElementById('format.alignInput').value);draw();}" value="1">subsamplig H:<input id="format.subshInput" type="text" class="varInput" onchange="{format.subsh=parseInt(document.getElementById('format.subshInput').value);draw();}" value="1">subsamplig V:<input id="format.subsvInput" type="text" class="varInput" onchange="{format.subsv=parseInt(document.getElementById('format.subsvInput').value);draw();}" value="1"></div><input id="txtout" type="text" value="Formats.push(new Format(&quot;&quot;,  &quot;BGRA&quot;, &quot;Packed&quot;, 2,3,3,0,1,1,1,false,false,false));">
+</form>
+<div id="ref">
+<h2>References</h2>
+If you want some more information about color formats, take a look into the following places:
+<a href="http://www.fourcc.org/yuv.php"> FOURCC YUV pixel formats list.</a>
+<a href="http://en.wikipedia.org/wiki/YUV"> YUV color space.</a>
+<a href="http://en.wikipedia.org/wiki/RGB_color_space"> RGB color space.</a>
+<a href="http://en.wikipedia.org/wiki/YCbCr"> YCbCr color space.</a>
+<a href="http://www.retiisi.org.uk/v4l2/tmp/media_api/pixfmt.html"> Video for Linux Two API Specification: Chapter 2. Image Formats.</a>
+<a href="http://en.wikipedia.org/wiki/Lenna"> What is the image on top of the page?</a>
+</div>
+
+<div id="likeit">
+<!-- Place this tag where you want the +1 button to render -->
+<div class="g-plusone"></div>
+<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div class="fb-like" data-href="http://rawpixels.net/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</div>
+<div id="copyright">Copyright © 2014 Robert Mazur. All rights reserved.</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Place this tag in your head or just before your close body tag -->
+<script type="text/javascript" src="RAW%20Pixels_files/plusone.js"></script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
